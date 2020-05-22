@@ -7,15 +7,67 @@
     <title> Survey Form</title>
 </head>
 <body>
-    <div id="background-overlay">
+
+ <header>
 <h1 id="title"> The Horoscope Survey </h1>
 <p id="description"> Thank you for giving us some insight on your Horoscope! </p>
-<form id="survey-form">
-    <h2> Name </h2>
-    <input id="name" placeholder="Enter Your Name"> 
+</header>
+
+<form id="survey-form" action="#">
+    <div id="form-group">
+    <label for="name"> Name: </label>
+    <input id="name" type="text" placeholder="Enter Your Name" required> 
+    </div>
+    <div id="form-group">
+    <label for="email"> Email: </label>
+    <input type="email" id="email" placeholder="Enter Your Email" required> 
+    </div>
+    <div id="form-group">
+    <label for="number"> Birth Month (optional): </label>
+    <input id="number" placeholder="Birth Month" type="number"> 
+    </div>
+    <div id="form-group">
+    <label for="horoscope"> What's your Sign? : </label>
+    <select name="horoscopes" value="select a value" id="horoscopes" >
+    </div>
+    <div id="form-group">
+        <option value="none" selected disabled hidden> Select A Horoscope </option>
+        <option value="aries"> Aries </option>
+        <option value="Taurus"> Taurus </option>
+        <option value="Gemini"> Gemini </option>
+        <option value="Leo"> Leo </option>
+        <option value="Cancer"> Cancer </option>
+        <option value="Libra"> Libra </option>
+        <option value="Virgo"> Virgo </option>
+        <option value="Scorpio"> Scorpio </option>
+        <option value="Sagittarius"> Sagittarius </option>
+        <option value="Capricorn"> Capricorn </option>
+        <option value="Aquarius"> Aquarius </option>
+        <option value="Pisces"> Pisces </option>
+    </select>
+</div>
+<div id="form-group">
+    <p> Do You Believe In Horoscopes? </p>
+    <label for="belief"> <input id="yes" type="radio" name="yes" value="yes"> Yes, I do. </input> </label>
+    <label for="belief"> <input id="no" type="radio" name="no" value="no"> No, I don't. </input> </label>
+    <label for="belief"> <input id="sometimes" type="radio" name="sometimes" value="sometimes"> Sometimes, when it's what I want to hear. </input> </label>
+</div>
+<div id="form-group">
+    <label for="horoscope"> What's your Elemental Sign? : </label>
+    <select name="element" value="select a value" id="element" >
+    </div>
+<div id="form-group">
+    <option value="none" selected disabled hidden> Select A Sign </option>
+    <option value="water"> Water </option>
+    <option value="fire"> Fire </option>
+    <option value="air"> Air </option>
+    <option value="earth"> Earth </option>
+</select>
 </form>
 
-    </div>
+<div id="form-group">
+    <label for="temperament"> What reflects your personality? (Choose All That Apply) </label>
+</div>
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>

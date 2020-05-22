@@ -1,41 +1,119 @@
 html {
-    background: url('./stars-photo.jpeg') no-repeat;
+    background: url('./books-image.jpeg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    color: white;
+    color: black;
     width: 100vw;
-    height: 100vh;
-}
-
-body{
-    margin: 25px;
-    padding: 25px;
+    height: 100%;
 }
 
 
+.container {
+    margin: 3.125rem auto 0 auto;
+}
+
+.centered-text {
+    text-align: center;
+    margin: 1em auto 0px auto;
+    font-family: 'Bree Serif', serif;
+}
 
 #title {
-    text-align: center;
+    font-size: 3em;
 }
 
 #description {
-    text-align: center;
+    font-size: 1.5em;
+    font-weight: bolder;
 }
+
 
 #survey-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  
-    width: 50vw;
-    margin: 0 auto;
     background-color: rgba(0,0,0,0.5);
-    border-radius: 3%;
+    color: white;
+    padding: 40px;
+    height: 100%;
+    width: 50vw;
+    margin: 20px auto 150px auto;
+    border-radius: 10px;
 }
 
 
-
-#form-group{
-    margin: 0 auto 1.25rem auto;
-    padding: 0.25rem;
+#form-group {
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
+}
+
+.form-control {
+    width: 48vw;
+    height: 2em;
+    border-radius: 7px;
+    transition: ease-in;
+}
+
+input:hover {
+border: 2px solid blue;
+}
+
+input {
+    font-size: 16px;
+}
+
+#genre-label {
+    font-family: 'Bree Serif', serif;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+label {
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#number-label {
+    font-family: 'Bree Serif', serif;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+#email-label {
+    font-family: 'Bree Serif', serif;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+#name-label {
+    font-family: 'Bree Serif', serif;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+#dropdown {
+    height: 6vh;
+    width: 48.5vw;
+}
+
+
+p {
+    font-size: 25px;
+}
+
+#text-area {
+    height: 15vh;
+}
+
+#submit {
+    height: 5vh;
+    border-radius: 10px;
+    background-color: rgb(150, 79, 38);
+    border: none;
+    transition: ease-in;
+    margin-top: 20px;
+}
+
+#submit:hover {
+    border: 2px solid black;
 }
